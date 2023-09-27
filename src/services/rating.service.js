@@ -1,10 +1,7 @@
 import { int } from 'neo4j-driver'
-import { goodfellas } from '../../test/fixtures/movies.js'
 import { ratings } from '../../test/fixtures/ratings.js'
 import NotFoundError from '../errors/not-found.error.js'
 import { toNativeTypes } from '../utils.js'
-
-// TODO: Import the `int` function from neo4j-driver
 
 export default class ReviewService {
   /**
@@ -40,7 +37,7 @@ export default class ReviewService {
    */
   // tag::forMovie[]
   async forMovie(id, sort = 'timestamp', order = 'ASC', limit = 6, skip = 0) {
-    // TODO: Get ratings for a Movie
+    
 
     return ratings
   }

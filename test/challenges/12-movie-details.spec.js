@@ -26,7 +26,6 @@ describe('12. Movie Details', () => {
     const service = new MovieService(driver)
 
     const output = await service.findById(lockStock)
-
     expect(output.tmdbId).toEqual(lockStock)
     expect(output.title).toEqual('Lock, Stock & Two Smoking Barrels')
   })
